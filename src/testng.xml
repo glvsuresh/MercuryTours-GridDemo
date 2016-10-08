@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Grid Suite" parallel="classes" thread-count="2">
+	<test name="Login With firefox">
+		<parameter name="sBrowserName" value="firefox" />
+		<parameter name="sURL" value="http://newtours.demoaut.com/"/>
+		<classes>
+			<parameter name="sUserName" value="mercury" />
+			<parameter name="sPassword" value="mercury" />
+			<class name="com.training.mercuryTours.testcases.Login" />
+		</classes>
+	</test>
+	<test name="Login With Chrome">
+		<parameter name="sBrowserName" value="chrome" />
+		<parameter name="sURL" value="http://newtours.demoaut.com/"/>
+		<classes>
+			<parameter name="sUserName" value="mercury" />
+			<parameter name="sPassword" value="mercury" />
+			<class name="com.training.mercuryTours.testcases.Login" />
+		</classes>
+	</test>
+</suite>
